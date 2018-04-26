@@ -14,9 +14,9 @@ object KafkaUtilsBuild extends Build {
     retrieveManaged := true,
     transitiveClassifiers in Scope.GlobalScope := Seq("sources"),
     resolvers ++= Seq(
-      "sonatype-snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
-      "sonatype-releases" at "http://oss.sonatype.org/content/repositories/releases",
-      "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
+      //"sonatype-snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
+      //"sonatype-releases" at "http://oss.sonatype.org/content/repositories/releases",
+      //"Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
       "JBoss Repository" at "http://repository.jboss.org/nexus/content/repositories/releases/"),
     libraryDependencies ++= Seq(
       "log4j" % "log4j" % "1.2.17",
@@ -48,6 +48,7 @@ object KafkaUtilsBuild extends Build {
       "com.twitter" % "util-core" % "3.0.0",
       "org.reflections" % "reflections" % "0.9.10"),
     resolvers ++= Seq(
-      "java m2" at "http://download.java.net/maven/2",
-      "twitter repo" at "http://maven.twttr.com"))
+      "java m2" at "http://download.java.net/maven/2")
+      //"twitter repo" at "http://maven.twttr.com"))
+  )
 }
